@@ -20,11 +20,6 @@ def verify_format(line_txt):
         edges_distribution(line_txt)
 
 
-def show_info():
-    print(vertices)
-    print(edges)
-
-
 def edges_distribution(line_txt):
     global edges
     streetraffic = line_txt[3]

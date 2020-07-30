@@ -1,6 +1,7 @@
 import networkx as nx
 import read_txt as rt
 
+
 def create_graph():
     graph = {}
     rt.read_txt()
@@ -14,8 +15,9 @@ def create_graph():
     graph = change_format_dict(graph)
     return graph
 
-def change_format_dict(grap):
-    for n_key, n_data in grap.items():
+
+def change_format_dict(graph):
+    for n_key, n_data in graph.items():
         for key in n_data:
             n_data[key] = int(n_data[key]["weight"])
-    return grap
+    return graph
